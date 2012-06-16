@@ -1,0 +1,23 @@
+{
+  "name": "Music Discovery",
+  "version": "0.1",
+  "minimum_chrome_version": "10",
+  "icons": { "128":"img/ms_128.png", "48":"img/ms_48.png", "32":"img/ms_32.png", "16":"img/ms_16.png" },
+  "description": "Discover Music Bands/Artists in a webpage",
+  "background_page": "background.html",
+  "options_page": "options.html",
+  "omnibox": { "keyword" : "ms" },
+  "browser_action": {
+      "default_title": "Music Discovery",
+      "default_icon": "img/ms_19.png",
+      "popup": "popup.html"
+  },
+  "permissions": [
+    "tabs",
+	"contextMenus",
+    "http://*/*",
+    "http://developer.echonest.com/*",
+    "http://api.face.com/*"
+  ]
+}
+
